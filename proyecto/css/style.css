@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap');
+:root{
+    --surface:#f9f9f9;
+    --white: #ffffff;
+    --hover-menu: #edebeb;
+    --color-border: #d3d3d3;
+    --color-text: #030303;
+    --color-text-description: #606060;
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 6% 94%;
+    font-family:'Roboto' ;
+}
+.Izquierda{
+    background-color: var(--white);
+    height: 100vh;
+    font-size: 9px;
+}
+.Izquierda div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 8px;
+    width: 100%;
+    height: 50px;
+}
+.Izquierda div:hover{
+    background-color: var(--hover-menu);
+}
+.Izquierda div p{
+    padding: 0px;
+    margin: 0px;
+}
+.Izquierda img{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+.Derecha{
+    background-color: var(--surface);
+    display: flex;
+    flex-direction: column;
+}
+.Derecha .header{
+    height: 56px;    
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.Derecha .header a img{
+    height: 40px;
+}
+.Derecha .header .search{
+    display: flex;
+    align-items: center;
+}
+.Derecha .header input{
+    height: 40px;
+    font-size: 14px;
+    padding: 2px 6px;
+    width: 500px;
+    border: 1px solid var(--color-border);
+    outline: none;
+}
+.Derecha .header .search .button{
+    background-color: var(--surface);
+    height: 46px;
+    width: 64px;
+    padding: 1px 6px;
+    border: 1px solid var(--color-border);
+}
+.Derecha .header .search .button img{
+    width: 40%;
+    height: 40%;
+}
+.Derecha .header .search .button.mic{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 15px;
+    border: none;
+}
+.Derecha .header .search .button.mic img{
+    width: 60%;
+    height: 70%;
+}
+.Derecha .header .end{
+    display: flex;
+}
+.Derecha .header .end .icon{
+     width: 22px;
+     height: 22px;
+     margin: 10px;
+}
+.Derecha .suggestions{
+    height: 56px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+}
+.Derecha .suggestions button{
+    display: flex;
+    border-radius: 16px;
+    border: 1px solid var(--color-border);
+    background-color: var(--hover-menu);
+    margin-right: 10px;
+    color: var(--color-text);
+    align-items: center;
+    height: 32px;
+    padding: 0 12px;
+}
+.Derecha .suggestions .one-suggestion{
+    background-color: var(--color-text);
+    color: var(--white);
+}
+.Derecha .row-videos{
+    display: flex;
+    padding: 20px;
+    height: 286px;
+}
+.Derecha .row-videos .video{
+    height: 160px;
+    width: 266px;
+    padding: 0 12px;
+}
+
+.Derecha .row-videos .video .description{
+    display: flex;
+    padding: 8px;
+}
+.Derecha .row-videos .video .description .column{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.Derecha .row-videos .video .description .column.izq{
+    justify-content: flex-start;
+}
+
+.Derecha .row-videos .video .description .column.grow-2{
+    flex-grow: 9;
+    flex-direction: column;
+}
+.Derecha .row-videos .video .description .column .title{
+    margin: 2px 10px 5px 12px;
+    font-size: 14px;
+    color: var(--color-text);
+    line-height: 20px;
+}
+.Derecha .row-videos .video .description .column .text{
+    margin: 5px 10px 1px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-text-description);
+}
+
+.Derecha .row-videos .video .description .column .avatar{
+    width: 30px;
+    height: 30px;
+}
+
+.Derecha .row-videos .video .description .column.der{
+    justify-content: flex-end;
+}
+
+.Derecha .row-videos .video .description .column .icon-more{
+    width: 14px;
+    height: 14px;
+}
+
+
