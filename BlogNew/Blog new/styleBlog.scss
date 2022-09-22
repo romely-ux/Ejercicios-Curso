@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap");
+:root {
+  --white: #ffffff;
+  --text: #7d857e;
+  --green-dark: #5a7a5f;
+  --green-ligth: #acbcaf;
+  --orange-dark: #e09142;
+  --orange-ligth: #f9e5d2;
+  --gray: #f2f2f2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.header {
+  display: flex;
+  border-bottom: 1px solid var(--green-ligth);
+  justify-content: center;
+
+  /*este corresponde al contenedor de la etiqueta img*/
+  .logo {
+    max-width: 300px;
+    padding: 0 10%;
+
+    /*este corresponde a la etiqueta img*/
+    .logo-icon {
+      width: 100%;
+    }
+  }
+}
+.barra-menu {
+  height: 45px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--green-ligth);
+
+  /*contenedor del icono de hamburguesa */
+  .icon {
+    max-width: 40px;
+    max-height: 40px;
+    /*clase de la etiqueta img de hamburguesa */
+    .icon-menu {
+      width: 100%;
+    }
+  }
+}
+.navbar {
+  display: none;
+}
+
+// este es el conjunto de articulos
+.group {
+  padding: 2%;
+  background-color: var(--orange-ligth);
+
+  //   corresponde a un articulo
+  .article {
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    border-radius: 15px;
+
+    .box {
+      background-color: #f2f2f2;
+      border-radius: 15px;
+
+      // contenedor de la imagen del articulo
+      .img-article {
+        height: 250px;
+        overflow: hidden;
+        // clase de la etiqueta img
+        .image {
+          object-fit: cover;
+          border-radius: 15px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    // corresponde a el contenido de un aritculo
+    .content {
+      padding: 20px 20px;
+      // titulo del articulo
+      .title {
+        font-weight: 600;
+        color: var(--green-dark);
+        margin-bottom: 10px;
+      }
+      //   pequena descripcion del articulo
+      .paragraph {
+        color: var(--text);
+        font-style: oblique;
+        margin-bottom: 5px;
+      }
+      //   link de leer mas
+      .read-more {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 12px;
+        color: var(--orange-dark);
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .barra-menu {
+    display: none;
+  }
+  .navbar {
+    display: initial;
+    width: 100%;
+    height: 50px;
+    padding: 10px 0px 10px 0px;
+
+    .box-navigator {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      border-bottom: 1px solid var(--green-ligth);
+
+      .navigation {
+        list-style: none;
+        line-height: none;
+
+        .border {
+          text-decoration: none;
+          padding: 0 20px;
+          border-right: 1px solid var(--green-ligth);
+          color: var(--green-dark);
+
+          &.less {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    //   corresponde a un articulo
+    .article {
+      max-width: 50%;
+      margin-bottom: 5%;
+      .img-article {
+        .image {
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1080px) {
+  .barra-menu {
+    display: none;
+  }
+  .navbar {
+    display: initial;
+    width: 100%;
+    height: 50px;
+    padding: 10px 0px 10px 0px;
+
+    .box-navigator {
+      display: flex;
+      padding-left: 30%;
+      padding-right: 30%;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      border-bottom: 1px solid var(--green-ligth);
+
+      .navigation {
+        list-style: none;
+        line-height: none;
+
+        .border {
+          text-decoration: none;
+          padding: 0 20px;
+          border-right: 1px solid var(--green-ligth);
+          color: var(--green-dark);
+
+          &.less {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    //   corresponde a un articulo
+    .article {
+      max-width: 30%;
+      margin-bottom: 5%;
+      .img-article {
+        .image {
+        }
+      }
+    }
+  }
+}
