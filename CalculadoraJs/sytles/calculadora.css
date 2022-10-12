@@ -1,0 +1,93 @@
+* {
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  background-color: #fc947d;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+body .calculadora {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (75px)[4];
+      grid-template-columns: repeat(4, 75px);
+  -ms-grid-rows: 160px (75px)[5];
+      grid-template-rows: 160px repeat(5, 75px);
+  padding: 15px;
+  background-color: #900c3f;
+  border-radius: 30px;
+  -webkit-box-shadow: 15px 10px 0px 5px #00000033;
+          box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+body .display {
+  grid-column: 1 / -1;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 10px 20px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #000;
+  border-radius: 15px;
+  text-align: right;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  word-break: break-all;
+  -webkit-box-sizing: 0px 0px 0px 10px #00000033;
+          box-sizing: 0px 0px 0px 10px #00000033;
+}
+
+body .display #primer_valor {
+  font-size: 2em;
+}
+
+body .display #segundo_valor {
+  font-size: 1.5em;
+}
+
+body button {
+  cursor: pointer;
+  margin: 5px;
+  padding: 0px;
+  border-radius: 25px;
+  font-size: 1.5em;
+  border: none;
+  background-color: #900c3f;
+  -webkit-box-shadow: 5px 5px 10px -3px #00000033, -5px -5px 3px #fc947d1f;
+          box-shadow: 5px 5px 10px -3px #00000033, -5px -5px 3px #fc947d1f;
+}
+
+body button.col-2 {
+  grid-column: span 2;
+}
+
+body button:active {
+  background-color: #900c3f;
+}
+
+body button:focus {
+  outline: none;
+}
+/*# sourceMappingURL=calculadora.css.map */
