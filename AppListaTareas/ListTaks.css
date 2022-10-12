@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body .Principal {
+  width: 100%;
+  padding: 50px 0;
+  border-top: 20px solid #d32f2f;
+  background-color: #f44336;
+  color: #fff;
+}
+
+body .Principal .Wrap {
+  margin: auto;
+  max-width: 800px;
+  width: 90%;
+}
+
+body .Principal .formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: #212121;
+  width: 100%;
+}
+
+body .Principal .formulario input[type="text"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+body .Principal .formulario input[type="text"].error {
+  border: 5px solid #d32f2f;
+  color: red;
+}
+
+body .Principal .formulario .button {
+  background: none;
+  border: 1px solid #d32f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px;
+}
+
+body .Principal .formulario:hover {
+  border: 1px solid #fff;
+}
+
+body .tareas .Wrap {
+  margin: auto;
+  max-width: 800px;
+  width: 90%;
+}
+
+body .tareas .Wrap .lista {
+  list-style: none;
+  border-bottom: 1px solid #b6b6b6;
+}
+
+body .tareas .Wrap .lista li {
+  border-bottom: 1px solid #b6b6b6;
+}
+
+body .tareas .Wrap .lista li a {
+  color: #212121;
+  display: block;
+  padding: 20px 0;
+  text-decoration: none;
+}
+
+body .tareas .Wrap .lista li a:hover {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=ListTaks.css.map */
