@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="result">
+        <h1>Ganador</h1>
+        <br />
+        <h2 id="result-winner"></h2>
+        <br />
+
+        <div class="contador">
+          <span id="cont-player" class="num-contador">0</span>
+          <span> || </span>
+          <span id="cont-cpu" class="num-contador">0</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="player">
+          <h1>Player 1</h1>
+          <div class="container-img-game">
+            <img src="" alt="" id="player-opt-img" class="img-game" />
+          </div>
+        </div>
+        <div class="player">
+          <h1>Player CPU</h1>
+          <div class="container-img-game">
+            <img src="" alt="" id="cpu-opt-img" class="img-game" />
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="options">
+          <button class="btn-opt" onclick="gamePlayer(0)">
+            <img class="img-opt" src="./images/icons8-roca-80.png" alt="" />
+          </button>
+          <button class="btn-opt" onclick="gamePlayer(1)">
+            <img class="img-opt" src="./images/icons8-papel-48.png" alt="" />
+          </button>
+          <button class="btn-opt" onclick="gamePlayer(2)">
+            <img class="img-opt" src="./images/icons8-scissors-64.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./js/game.js"></script>
